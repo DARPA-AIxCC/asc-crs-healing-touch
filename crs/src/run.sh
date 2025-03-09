@@ -64,18 +64,18 @@ fi
 
 cat <<EOF > /app/orchestrator/config/api.json
 {
-  "openai_token": "${OPENAI_API_KEY:-sk-proj-rJ19DXcrkLNtqWnvhfDZT3BlbkFJ7iMszPYcYuGIgr299JRn}",
-  "azure_token": "${AZURE_API_KEY:-f6654447b2b14ab5a5b4264c8bdff171}",
+  "openai_token": "${OPENAI_API_KEY}",
+  "azure_token": "${AZURE_API_KEY}",
   "azure_base": "${AZURE_API_BASE:-https://aicc.openai.azure.com}",
-  "anthropic_token": "${ANTHROPIC_API_KEY:-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}",
+  "anthropic_token": "${ANTHROPIC_API_KEY}",
   "huggingface_token": "",
   "gemini_token": {
-    "project_id": "${PROJECT_ID:-elated-capsule-422713-i4}",
-    "private_key_id": "${PRIVATE_KEY_ID:-63afd70dcc401fcc15111690cf8c49502fe64d3d}",
-    "private_key": "${PRIVATE_KEY:------BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCykXEMmWaqMIy0\ngh6XOyfvF2FsurTkpsvac9zwANKQC1L4yOFzogTWG+IkDFK31+30JY79AbywQ9f9\n0ivLJLWLnATRjiOnWhMuzujT3oa4zaOaruZey2WzOWz6hoq3iBvTCsHUL+v+DFQf\nw53/kpecRb13InV6/LfUP7KOFAWf7/tvQtrfSj+8QPrT5TOHP5GiM4/XLwoM+nmI\nI1f3/80LCSw9rmhwZVLtyw8s5B5GqlGMhSTjEduqM+0CKBY+wysABWFPmA7xsb2Y\n1i9KzFSMbf3pabOPlf0CRMjArrUVWciMAeb1X+EW0PK001I4Me8Sz/lb+GkRdgw1\nKfnsT3+XAgMBAAECggEAPdUyDbhSvgz4tAq4mAqCbf6tHC7cs650OW1UbIEEaJ+b\nOA2rT9SjExbtrCjePc3WFmwpAsAmu+yKLtinlHzeJn08h+nNu8XrjZJVOgQ8p2KB\ny+7TU7DfwvtYGroa76mAZQg9DQIZGEvhl2wv2k9DE3hsvoOepZs79pGl/R++wN4O\np/w+JTmPrWK050Ui4JU7MWtjJVFyYjZaP+cAMYZnxUPV7qIK/l6rMXydZTkWuAQE\n2bClTJUiY6//5OvHF66ZfZiidUGoFjH+j7o71wajJ52PHbRRD3ofI3XvxKyNz3Qz\nNdOLBto9zewh3Ip/JFxFPwJFsN1LhGFX8Hl15Nbx1QKBgQDnuKgMZjLbjyph6Odi\nFfmf1hVOiYXEu/FNb1O8NUJL7pdCbMnRnKUXSpLqgyxpE1lFSlzTT6yzJnjsSCco\nKSHsRZZJiL1B725pwZOLzx0XwXa58q7y4H8VOLfx2L7e2N3WTYFydTMtrxH622Bw\nHjQecOAe9dYOpyiXNKYGN2D24wKBgQDFRxWP9JRdyUKt5oHF8HOJyup24Qg1F8++\nCITLGDDgAMLCpke2OPXIMyQ2IJ31yv1KK6h2bWzDBge6X/+FD6BXMx043U7JJwmR\nLXEncU0DikSuyLRqYIz9u6yJLLZIV1Ir968V9TFNNJDcSGzEWDBeVp7mbaibXL0w\nfBYHL2z+vQKBgQCkJJIl9l8gWJHVOX5uZNKm/qepMpGngtqz16ChObj0wNY1H4r3\nCNeJYDIiHTlgVWxvQPXwWggj/6S4+4OBV2HIVKLZBBvMkSbNk2pJJzWcllbb8aUs\nNwrOpZbnonnSshyyqcSAp7TRL6q04KG3yi1xQtQAGnS/fHmsYocY8DGnsQKBgQCF\nA3TKZ0JSKg1Ha5A8ge+lDKgiF4CNK8zqeJvwxBLQNjMbQzo+5xDxN2pHBJ78xy0Z\nAW7Iyub2Z+51/5wtf2fA47nkSXOBtUyCEn2k9oPSyzucDb93qjnmKtAefYM6K4ZA\nFvR6faQMRlEV9c9AY6XZNdZVz8JLXrBBLKk9lwCKkQKBgFs3wJLvEPW511hMvXQk\nJjsS/gkF6AQ2dXUAUBml0FyzFbkpqfwThjf5Ch0As77SwjV33AVKMSqmE5yYjFSO\nj6WvqDhntFRLbah5jxsijQu/nG7rGpo9F5tZKFxVhzg16Uj+wCoUG9SN5BVNFy1E\nX1jc+LUkinMlKNV2yjDOlGVC\n-----END PRIVATE KEY-----\n}",
-    "client_email": "${CLIENT_EMAIL:-aixcc-897@elated-capsule-422713-i4.iam.gserviceaccount.com}",
-    "client_id": "${CLIENT_ID:-112635395703021710182}",
-    "client_x509_cert_url": "${CLIENT_CERT:-https://www.googleapis.com/robot/v1/metadata/x509/aixcc-897%40elated-capsule-422713-i4.iam.gserviceaccount.com}"
+    "project_id": "${PROJECT_ID}",
+    "private_key_id": "${PRIVATE_KEY_ID}",
+    "private_key": "${PRIVATE_KEY}",
+    "client_email": "${CLIENT_EMAIL}",
+    "client_id": "${CLIENT_ID}",
+    "client_x509_cert_url": "${CLIENT_CERT}"
   }
 }
 EOF
